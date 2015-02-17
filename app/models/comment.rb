@@ -3,5 +3,5 @@ class Comment < ActiveRecord::Base
   belongs_to :commentable, polymorphic: true
   has_many :comments, as: :commentable
 
-  attr_accessible :description, :commentable_id, :commentable_type, :user_id
+  attr_accessible :description, :commentable_id, :commentable_type, :user_id, :comment_ids
 end
