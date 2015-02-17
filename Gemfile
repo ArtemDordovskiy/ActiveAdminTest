@@ -8,6 +8,9 @@ gem 'rails', '3.2.13'
 gem 'mysql2'
 gem 'foreigner'
 
+#Active Admin - rails admin interface
+gem 'rails_admin'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
