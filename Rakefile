@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-ActiveAdminTest::Application.load_tasks
+AdminTest::Application.load_tasks
