@@ -2,9 +2,9 @@ AdminTest::Application.routes.draw do
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
   devise_for :users
+  root to: 'blogs#index'
 
-
-
+  resources :blogs
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
