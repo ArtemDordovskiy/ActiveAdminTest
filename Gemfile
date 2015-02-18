@@ -11,6 +11,7 @@ gem 'foreigner'
 #Active Admin - rails admin interface
 gem 'rails_admin'
 gem 'ckeditor'
+gem 'paper_trail', '2.7.2'
 
 # Gems used only for assets and not required
 # in production environments by default.
