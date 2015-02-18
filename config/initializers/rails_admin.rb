@@ -98,20 +98,21 @@ RailsAdmin.config do |config|
 
   ###  Blog  ###
 
-  # config.model 'Blog' do
-
+  config.model Blog do
   #   # You can copy this to a 'rails_admin do ... end' block inside your blog.rb model definition
 
   #   # Found associations:
 
-  #     configure :user, :belongs_to_association
-  #     configure :comments, :has_many_association
+    configure :user, :belongs_to_association
+    configure :comments, :has_many_association
 
   #   # Found columns:
 
   #     configure :id, :integer
-  #     configure :title, :string
-  #     configure :description, :text
+    configure :title, :string
+    configure :description, :text do
+      ckeditor true
+    end
   #     configure :user_id, :integer         # Hidden
   #     configure :created_at, :datetime
   #     configure :updated_at, :datetime
@@ -139,7 +140,7 @@ RailsAdmin.config do |config|
   #     # also see the create, update, modal and nested sections, which override edit in specific cases (resp. when creating, updating, modifying from another model in a popup modal or modifying from another model nested form)
   #     # you can override a cross-section field configuration in any section with the same syntax `configure :field_name do ... end`
   #     # using `field` instead of `configure` will exclude all other fields and force the ordering
-  # end
+  end
 
 
   ###  Comment  ###

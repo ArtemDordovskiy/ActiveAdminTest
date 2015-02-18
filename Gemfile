@@ -10,6 +10,7 @@ gem 'foreigner'
 
 #Active Admin - rails admin interface
 gem 'rails_admin'
+gem 'ckeditor'
 
 # Gems used only for assets and not required
 # in production environments by default.
