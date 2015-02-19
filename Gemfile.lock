@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/galetahub/ckeditor.git
+  revision: 96c2ba8602154a7d46c4c95952550ae638503396
+  specs:
+    ckeditor (4.1.1)
+      cocaine
+      orm_adapter (~> 0.5.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -48,6 +56,10 @@ GEM
       sass (~> 3.2)
       thor
     builder (3.0.4)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.5)
+      climate_control (>= 0.0.3, < 1.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -376,6 +388,7 @@ PLATFORMS
 DEPENDENCIES
   activeadmin (= 0.6.3)
   bcrypt-ruby (~> 3.0.0)
+  ckeditor!
   coffee-rails (~> 3.2.1)
   foreigner
   jquery-rails (= 2.3.0)
