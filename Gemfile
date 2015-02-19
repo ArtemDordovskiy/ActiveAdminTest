@@ -10,6 +10,7 @@ gem 'foreigner'
 
 gem 'activeadmin', '0.6.3'
 gem 'ckeditor', github: 'galetahub/ckeditor'
+gem 'paper_trail'
 
 # Gems used only for assets and not required
 # in production environments by default.
