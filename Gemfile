@@ -10,6 +10,8 @@ gem 'foreigner'
 
 gem 'activeadmin', '0.6.3'
 gem 'ckeditor', github: 'galetahub/ckeditor'
+gem 'paperclip'
+
 gem 'paper_trail'
 gem 'cancan'
 
