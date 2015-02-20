@@ -14,6 +14,7 @@ ActiveAdmin.register User do
       f.input :email
       f.input :password
       f.input :password_confirmation
+      f.input :role, collection: User::ROLES
     end
     f.actions
   end

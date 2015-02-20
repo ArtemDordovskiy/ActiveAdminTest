@@ -228,3 +228,11 @@ ActiveAdmin.setup do |config|
   # config.filters = true
 
 end
+
+ActiveAdmin::ResourceController.class_eval do
+  protected
+
+  def current_ability
+    @current_ability ||= AdminAbility.new(current_user)
+  end
+end
