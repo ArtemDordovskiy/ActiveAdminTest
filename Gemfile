@@ -12,6 +12,7 @@ gem 'foreigner'
 gem 'rails_admin'
 gem 'ckeditor'
 gem 'paper_trail', '2.7.2'
+gem 'paperclip', '~> 4.2'
 
 # Gems used only for assets and not required
 # in production environments by default.
