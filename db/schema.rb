@@ -101,7 +101,6 @@ ActiveRecord::Schema.define(:version => 20150224075718) do
   add_index "comments", ["user_id"], :name => "comments_user_id_fk"
 
   create_table "photos", :force => true do |t|
-    t.string   "caption"
     t.string   "file_file_name"
     t.string   "file_content_type"
     t.integer  "file_file_size"
