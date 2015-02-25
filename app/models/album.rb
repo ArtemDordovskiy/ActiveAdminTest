@@ -1,5 +1,5 @@
 class Album < ActiveRecord::Base
-  attr_accessible :title, :user_id
+  attr_accessible :title, :user_id, :photos_attributes
   belongs_to :user
   has_many :photos
 
