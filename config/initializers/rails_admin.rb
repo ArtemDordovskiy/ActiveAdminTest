@@ -6,6 +6,26 @@ RailsAdmin.config do |config|
 
   ################  Global configuration  ################
 
+  config.actions do
+    # root actions
+    dashboard                     # mandatory
+    # collection actions
+    index                         # mandatory
+    new
+    export
+    history_index
+    bulk_delete
+    # member actions
+    show
+    edit
+    delete
+    history_show
+    show_in_app
+
+    # Add the nestable action for configured models
+    nestable
+  end
+
   # Set the admin name here (optional second array element will appear in red). For example:
   config.main_app_name = ['Admin Test', 'Admin']
   # or for a more dynamic name:
@@ -92,6 +112,11 @@ RailsAdmin.config do |config|
   #     # you can override a cross-section field configuration in any section with the same syntax `configure :field_name do ... end`
   #     # using `field` instead of `configure` will exclude all other fields and force the ordering
   # end
+
+  ###  Menu ###
+  config.model Menu do
+    nestable_list true
+  end
 
 
   ###  Blog  ###

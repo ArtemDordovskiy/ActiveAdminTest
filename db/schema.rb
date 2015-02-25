@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150224075718) do
+ActiveRecord::Schema.define(:version => 20150225090923) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "namespace"
@@ -100,14 +100,21 @@ ActiveRecord::Schema.define(:version => 20150224075718) do
 
   add_index "comments", ["user_id"], :name => "comments_user_id_fk"
 
+  create_table "menus", :force => true do |t|
+    t.string   "title"
+    t.integer  "position"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "photos", :force => true do |t|
-    t.string   "file_file_name"
-    t.string   "file_content_type"
-    t.integer  "file_file_size"
-    t.datetime "file_updated_at"
+    t.string   "photo_file_file_name"
+    t.string   "photo_file_content_type"
+    t.integer  "photo_file_file_size"
+    t.datetime "photo_file_updated_at"
     t.integer  "album_id"
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
   end
 
   add_index "photos", ["album_id"], :name => "photos_album_id_fk"

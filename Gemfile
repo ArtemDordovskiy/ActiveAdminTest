@@ -10,6 +10,7 @@ gem 'foreigner'
 
 #Active Admin - rails admin interface
 gem 'rails_admin'
+gem 'rails_admin_nestable'
 gem 'ckeditor'
 gem 'paper_trail', '2.7.2'
 gem 'paperclip', '~> 4.2'
