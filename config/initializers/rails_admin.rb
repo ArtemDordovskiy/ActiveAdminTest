@@ -118,6 +118,11 @@ RailsAdmin.config do |config|
     nestable_list true
   end
 
+  ###  Album ###
+  config.model Album do
+    configure :photos, :has_many_association
+  end
+
 
   ###  Blog  ###
 
